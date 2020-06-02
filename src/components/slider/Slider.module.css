@@ -1,0 +1,11 @@
+.main {
+    padding: 0 80px;
+}
+
+.slider{
+    background-image: linear-gradient(to right, red , yellow);
+    height: 300px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
