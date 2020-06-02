@@ -1,13 +1,16 @@
 import React from 'react';
-import classes from './Pages.module.css';
+import classes from './MainPage.module.css';
+import Slider from "./slider/Slider";
+import ImgGrid from "./ImgGrid";
 import {BrowserRouter, NavLink} from "react-router-dom";
 
-const Pages = () => {
+const MainPage = () => {
     return (
         <div className={classes.main}>
-            <div className={classes.slider}>// Something page //</div>
+            <Slider />
+            <ImgGrid />
         </div>
     );
 }
 
-export default Pages
+export default MainPage

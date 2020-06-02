@@ -1,15 +1,15 @@
 import React from 'react';
 import './App.css';
 import Header from "./components/Header/Header";
-import Slider from "./components/slider/Slider";
+import MainPage from "./components/mainPage/MainPage";
 import ShopPage from "./components/shop_page/ShopPage";
-import {BrowserRouter, Route} from "react-router-dom";
 import Account from "./components/Account/Account";
 import Collection from "./components/Collection/Collection";
 import Contact from "./components/Contact/Contact";
 import Journal from "./components/Journal/Journal";
 import Pages from "./components/Pages/Pages";
 import ShopInst from "./components/ShopInst/ShopInst";
+import {BrowserRouter, Route} from "react-router-dom";
 
 function App() {
     return (
@@ -17,7 +17,7 @@ function App() {
             <div>
                 <Header/>
                 <div>
-                    <Route exact path="/" component={Slider}/>
+                    <Route exact path="/" component={MainPage}/>
                     <Route path="/shop" component={ShopPage}/>
                     <Route path="/pages" component={Pages}/>
                     <Route path="/shop_inst" component={ShopInst}/>
