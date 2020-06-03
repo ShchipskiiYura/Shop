@@ -1,5 +1,6 @@
 .main {
     padding: 0 80px;
+    text-align: center;
 }
 .imgGrid {
     display: grid;
@@ -12,5 +13,9 @@
 
 .imgItem{
     background-color: deeppink;
+}
+
+.products{
+    background-color: coral;
 }
 

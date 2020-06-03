@@ -11,14 +11,15 @@ import Pages from "./components/Pages/Pages";
 import ShopInst from "./components/ShopInst/ShopInst";
 import {BrowserRouter, Route} from "react-router-dom";
 
-function App() {
+function App(props) {
     return (
         <BrowserRouter>
             <div>
                 <Header/>
                 <div>
-                    <Route exact path="/" component={MainPage}/>
-                    <Route path="/shop" component={ShopPage}/>
+                    <Route exact path="/" render={() => <MainPage things={props.state.things}/>}/>
+                    {/*<Route path="/shop" component={ShopPage}/>*/}
+                    <Route path="/shop" render={() => <ShopPage things={props.state.things}/>}/>
                     <Route path="/pages" component={Pages}/>
                     <Route path="/shop_inst" component={ShopInst}/>
                     <Route path="/collections" component={Collection}/>
